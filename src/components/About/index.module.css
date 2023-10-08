@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Bandeins Strange';
+    src: url(/fonts/bandeins-strange-variable.ttf) format("trueType");
+    font-display: swap;
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+}
+
+.div-one,
+.div-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #22223b;
+    font-family: 'Bandeins Strange';
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.text-div {
+    height: 50%;
+    padding: 1rem 3.5rem;
+}
