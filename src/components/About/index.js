@@ -1,6 +1,14 @@
 import React from "react";
 import Container from "../Container";
-import { introContainer, divOne, divTwo, textDiv } from "./index.module.css";
+import {
+  introContainer,
+  divOne,
+  mainHeading,
+  subHeading,
+  divTwo,
+  textDiv,
+} from "./index.module.css";
+// import "./bubbles.scss";
 
 const About = () => {
   return (
@@ -8,12 +16,64 @@ const About = () => {
       <div className={introContainer}>
         <div className={divOne}>
           <div className={textDiv}>
-            <h1>Hello, I'm Nateyana</h1>
+            <h1 className={mainHeading}>Hello, I'm Nateyana.</h1>
             {/* maybe typing text here */}
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p className={subHeading}>Web Developer and Educator</p>
           </div>
         </div>
-        <div className={divTwo}></div>
+        <div className={divTwo}>
+          {/* <div className={`${divTwo} bubbles`}>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div>
+          <div className="bubble"></div> */}
+        </div>
       </div>
     </Container>
   );

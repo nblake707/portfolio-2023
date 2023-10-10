@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "../Container";
+import { projectSection } from "./index.module.css";
 
 const Projects = () => {
   return (
     <Container id="projects">
-      <div>
-        <h1>Projects</h1>
-        <p>Hi! I'm the Projects page.</p>
+      <div className={projectSection}>
+        
       </div>
     </Container>
   );
