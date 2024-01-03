@@ -1,4 +1,19 @@
 .contact-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #4a4e69;
     height: 100%;
+}
+
+.contact {
+    
+}
+
+.left-column {
+
+}
+
+.right-column {
+    
 }

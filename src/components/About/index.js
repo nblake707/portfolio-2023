@@ -8,6 +8,7 @@ import {
   divTwo,
   textDiv,
 } from "./index.module.css";
+// import { StaticImage } from "gatsby-plugin-image";
 // import "./bubbles.scss";
 
 const About = () => {
@@ -16,12 +17,13 @@ const About = () => {
       <div className={introContainer}>
         <div className={divOne}>
           <div className={textDiv}>
-            <h1 className={mainHeading}>Hello, I'm Nateyana.</h1>
+            <h1 className={mainHeading}>Nateyana Blake</h1>
             {/* maybe typing text here */}
             <p className={subHeading}>Web Developer and Educator</p>
           </div>
         </div>
         <div className={divTwo}>
+        {/* <StaticImage src='../../images/icon.png' alt="logo" /> */}
           {/* <div className={`${divTwo} bubbles`}>
           <div className="bubble"></div>
           <div className="bubble"></div>
