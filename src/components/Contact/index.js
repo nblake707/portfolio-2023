@@ -1,20 +1,18 @@
 import React from "react";
 import Container from "../Container";
-import { contactSection } from "./index.module.css";
+import { contactSection, contact, leftColumn, rightColumn } from "./index.module.css";
 
 const Contact = () => {
   return (
     <Container id="contact">
       <div className={contactSection}>
-        <h1>Contact</h1>
-        <p>
-          <a
-            href="mailto:      
-        "
-          >
-            Email
-          </a>
-        </p>
+        <div className={leftColumn}>
+          <h1 className={contact}>Contact</h1>
+        </div>
+        <div className={rightColumn}>
+          <p>
+          </p>
+        </div>
       </div>
     </Container>
   );

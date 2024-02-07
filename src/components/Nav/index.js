@@ -1,32 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import { navBar, navList } from "./index.module.css";
+import { menuOverlay, active } from "./index.module.css";
 
-const Nav = () => {
+const Nav = ({ active }) => {
+
   return (
-    <header>
-      <nav className={navBar}>
-        <StaticImage src="../../images/icon.png" alt="logo" />
-        <ul className={navList}>
+    <>
+      <div className={active ? `${menuOverlay} ${menuOverlay.active}` : `${menuOverlay}`}>
+        <ul>
           <li>
-            <Link to="/#about">
-              About
-            </Link>
+            <Link to="">Home</Link>
           </li>
           <li>
-            <Link to="/#projects">
-              Projects
-            </Link>
+            <Link to="/#about">About</Link>
           </li>
           <li>
-            <Link to="/#contact">
-              Contacts
-            </Link>
+            <Link to="/#works">Works</Link>
+          </li>
+          <li>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </>
   );
 };
 
