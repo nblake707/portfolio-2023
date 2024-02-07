@@ -12,13 +12,24 @@
     z-index: 1;
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
-    color: #f2e9e4;
+    color: #2e4f4f;
     font-size: 1.1rem;
 }
 
 .copyright {
   margin-top: 1%;
 }
+
+  .social-icon {
+    height: 60px;
+    filter: invert(27%) sepia(46%) saturate(343%) hue-rotate(131deg) brightness(84%) contrast(88%);
+    margin: 10px 20px;
+} 
+
+.social-icon:hover {
+  filter: invert(100%) sepia(15%) saturate(6939%) hue-rotate(160deg) brightness(78%) contrast(86%);
+}
+
 
 
 
