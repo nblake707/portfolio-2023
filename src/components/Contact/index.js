@@ -11,12 +11,6 @@ const Contact = () => {
         </div>
         <div className={rightColumn}>
           <p>
-            <a
-              href="mailto:      
-        "
-            >
-              Email
-            </a>
           </p>
         </div>
       </div>
