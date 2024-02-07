@@ -34,12 +34,18 @@ const About = () => {
               story
             </h3>
             <p>
-             Hello, my name is Nateyana! I'm a web developer, coding instructor, and curriculum engineer
-             from NYC. 
-             I discovered programming by chance and what started as a surprise interest eventually became a new career path. After receiving a 
-             scholarship through the CUNY Tech Hire program I was able to attend The Software Guild, 
-             a fast-paced apprenticeship program specializing in data-driven Java development. 
-             This hybrid grant program made it possible for me to fully immerse myself in the world of programming.
+              Hello, my name is Nateyana! I'm a web developer, coding
+              instructor, and curriculum engineer from NYC. I discovered
+              programming by chance and what started as a surprise interest
+              eventually became a new career path. After receiving a scholarship
+              through the CUNY Tech Hire program I was able to attend The
+              Software Guild, a fast-paced apprenticeship program specializing
+              in data-driven Java development. This hybrid grant program made it
+              possible for me to fully immerse myself in the world of
+              programming. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum quisquam
+              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
             </p>
           </div>
         </div>
