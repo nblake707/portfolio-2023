@@ -22,13 +22,13 @@ const Home = () => {
   };
 
   return (
-    <Container id="about">
+    <Container id="home">
       <div className={introContainer}>
         <div className={divOne}>
           <div className={textDiv}>
             <h1 className={mainHeading}>hello</h1>
             {/* maybe typing text here */}
-            <p className={subHeading}>Web Developer and Educator</p>
+            <p className={subHeading}>I'm Nateyana, this is my personal page</p>
           </div>
         </div>
         <div className={divTwo}>

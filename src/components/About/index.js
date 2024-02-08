@@ -1,28 +1,29 @@
 import React from "react";
 import Container from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
-import { aboutSection, marginDiv, textDiv } from "./index.module.css";
+import { aboutSection, marginDiv, imageDiv, textDiv } from "./index.module.css";
 
 const About = () => {
   return (
     <Container id="about">
       <div className={aboutSection}>
         <div className={marginDiv}>
-          <div>
+          <div className={imageDiv}>
             <h2>About Me</h2>
             <StaticImage
               src="../../images/correctClass.jpg"
               alt="Classroom"
               objectFit="cover"
-              width={400}
+              width={410}
               height={270}
               style={{ margin: "3% 0 10% 0" }}
             />
+            {/* need to fix image display */}
             <StaticImage
               src="../../images/code_tint.jpg"
               alt="Code on computer screen"
               objectFit="cover"
-              width={400}
+              width={410}
               height={270}
             />
           </div>
