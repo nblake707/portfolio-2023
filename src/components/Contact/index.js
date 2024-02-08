@@ -7,7 +7,7 @@ const Contact = () => {
     <Container id="contact">
       <div className={contactSection}>
         <div className={leftColumn}>
-          <h1 className={contact}>Contact</h1>
+          <h2 className={contact}>Contact</h2>
         </div>
         <div className={rightColumn}>
           <p>

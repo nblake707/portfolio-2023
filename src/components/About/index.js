@@ -1,70 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "../Container";
-import Nav from "../Nav";
-import {
-  introContainer,
-  divOne,
-  mainHeading,
-  subHeading,
-  divTwo,
-  textDiv,
-  imgDiv,
-  mePic,
-  toggleIcon,
-} from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
+import { aboutSection, marginDiv, imageDiv, textDiv } from "./index.module.css";
 
 const About = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const menuToggle = () => {
-    setIsActive(!isActive);
-  };
-
   return (
     <Container id="about">
-      <div className={introContainer}>
-        <div className={divOne}>
-          <div className={textDiv}>
-            <h1 className={mainHeading}>hello</h1>
-            {/* maybe typing text here */}
-            <p className={subHeading}>Web Developer and Educator</p>
-          </div>
-        </div>
-        <div className={divTwo}>
-          <div 
-          // className={toggleIcon} 
-          onClick={menuToggle}>
-            {isActive ? (
-              <>
-                <StaticImage
-                  src="../../images/close-match.png"
-                  alt="Close menu icon"
-                  className={toggleIcon}
-                  width={50}
-                  height={50}
-                />
-                <Nav active={isActive}/>
-              </>
-            ) : (
-              <StaticImage
-                src="../../images/open-match.png"
-                alt="Open menu icon"
-                className={toggleIcon}
-                width={50}
-                height={50}
-              />
-            )}
+      <div className={aboutSection}>
+        <div className={marginDiv}>
+          <div className={imageDiv}>
+            <h2>About Me</h2>
+            <StaticImage
+              src="../../images/correctClass.jpg"
+              alt="Classroom"
+              objectFit="cover"
+              width={410}
+              height={270}
+              style={{ margin: "3% 0 10% 0" }}
+            />
+            {/* need to fix image display */}
+            <StaticImage
+              src="../../images/code_tint.jpg"
+              alt="Code on computer screen"
+              objectFit="cover"
+              width={410}
+              height={270}
+            />
           </div>
 
-          <div className={imgDiv}>
-            <StaticImage
-              src="../../images/me-3.jpeg"
-              alt="Picture of website owner"
-              className={mePic}
-              width={450}
-              height={455}
-            />
+          <div className={textDiv}>
+            <h3>
+              my
+              <br />
+              story
+            </h3>
+            <p>
+              Hello, my name is Nateyana! I'm a web developer, coding
+              instructor, and curriculum engineer from NYC. I discovered
+              programming by chance and what started as a surprise interest
+              eventually became a new career path. After receiving a scholarship
+              through the CUNY Tech Hire program I was able to attend The
+              Software Guild, a fast-paced apprenticeship program specializing
+              in data-driven Java development. This hybrid grant program made it
+              possible for me to fully immerse myself in the world of
+              programming. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
+              consequuntur voluptatum laborum numquam blanditiis harum quisquam
+              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
+            </p>
           </div>
         </div>
       </div>
