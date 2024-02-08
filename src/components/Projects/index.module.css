@@ -3,8 +3,12 @@
     background-color: #fff;
 }
 
-.project-cards {
-
+.project-tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50vh;
+    width: 100%;
 }
 
 .margin-div {
@@ -17,7 +21,7 @@
 }
 
 .margin-div h2 {
-    font-size: 5rem;
+    font-size: 6rem;
     color: darkseagreen;
     float: right;
 }

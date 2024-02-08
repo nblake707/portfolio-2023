@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container";
-import { projectSection, marginDiv, projectCards } from "./index.module.css";
+import { projectSection, marginDiv, projectTiles } from "./index.module.css";
 
 const Projects = () => {
   return (
@@ -8,10 +8,10 @@ const Projects = () => {
       <div className={projectSection}>
       <div className={marginDiv}>
       <h2>Works</h2>
-      <div className={projectCards}>
+      </div>
+      <div className={projectTiles}>
 
-      </div>
-      </div>
+</div>
       </div>
     </Container>
   );
