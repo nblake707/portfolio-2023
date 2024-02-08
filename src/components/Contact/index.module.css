@@ -2,22 +2,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    background-color: #f8f6f1;
+    background-color: #fff;
     height: 100%;
 }
 
 .contact {
-    display: inline-block;
-    font-size: 2rem;
-    color: #f8f6f1;
+    font-size: 5rem;
+    color: darkseagreen;
     /* background-color: #22223b; */
     position: relative;
     left: 1em;
     top: 1em;
     padding: 2% 10%;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 800;
+    font-family: "Prata", serif;
 }
+
 
 .left-column {
 

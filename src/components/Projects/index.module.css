@@ -1,5 +1,23 @@
 .project-section {
-    display: flex;
     height: 100%;
-    background-color: #F8F6F1;
+    background-color: #fff;
+}
+
+.project-cards {
+
+}
+
+.margin-div {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr; */
+        /* display: flex;
+        flex-direction: column; */
+        padding: 5% 12%;
+}
+
+.margin-div h2 {
+    font-size: 5rem;
+    color: darkseagreen;
+    float: right;
 }
