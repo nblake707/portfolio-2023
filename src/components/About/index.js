@@ -1,14 +1,13 @@
 import React from "react";
-// import Container from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
-import { containerLayout, aboutSection, paddingDiv, imageDiv, textDiv } from "./index.module.css";
+import { containerLayout, aboutSection, paddingDiv, textDiv } from "./index.module.css";
 
 const About = () => {
   return (
     <section id="about" className={containerLayout}>
       <div className={aboutSection}>
         <div className={paddingDiv}>
-          <div className={imageDiv}>
+          <div>
             <h2>About Me</h2>
             <StaticImage
               src="../../images/correctClass.jpg"
@@ -18,7 +17,6 @@ const About = () => {
               height={270}
               style={{ margin: "3% 0 10% 0" }}
             />
-            {/* need to fix image display */}
             <StaticImage
               src="../../images/code_tint.jpg"
               alt="Code on computer screen"
