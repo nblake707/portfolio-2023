@@ -1,23 +1,14 @@
+.container-layout {
+    height: 100vh;
+} 
+
 .project-section {
     height: 100%;
     background-color: #fff;
 }
 
-.project-tiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 50vh;
-    width: 100%;
-}
-
 .margin-div {
-        /* display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr; */
-        /* display: flex;
-        flex-direction: column; */
-        padding: 5% 12%;
+    padding: 5% 12%;
 }
 
 .margin-div h2 {
@@ -27,11 +18,26 @@
     margin: 8% 0 8% 0;
 }
 
+.project-tiles {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50vh;
+    width: 100%;
+}
+
+.project-tiles p {
+    position: absolute;
+    z-index: 2;
+}
+
 .project-img {
-  transition: opacity 0.5s ease; 
-  -moz-transition: opacity 0.5s ease;
-  -webkit-transition: opacity 0.5s ease;
-  /* transition: background 0.5s ease;  */
+    max-height: 100%;
+    transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    /* transition: background 0.5s ease;  */
 }
 
 .project-img:hover {

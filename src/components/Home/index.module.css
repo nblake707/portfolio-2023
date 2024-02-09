@@ -1,3 +1,7 @@
+.container-layout {
+    height: 95vh;
+} 
+
 .intro-container {
     display: grid;
     grid-template-columns: 1fr 1fr;

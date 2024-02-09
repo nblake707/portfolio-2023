@@ -1,28 +1,23 @@
+.container-layout {
+    height: 100vh;
+} 
+
 .about-section {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr; */
     background-color: #fff;
     height: 100vh;
-    overflow: hidden;
 }
 
-.margin-div {
+.padding-div {
     display: grid;
     grid-template-columns: auto auto;
-    max-height: 100%;
-    /* grid-template-rows: 1fr; */
-    /* display: flex;
-    flex-direction: column; */
-    margin: 0 12%;
-    /* padding: 2% 0; */
+    height: 100%;
+    padding: 0 12%;
 }
 
 .about-section h2 {
     color: #003170;
     font-size: 5rem; 
     font-family: "Prata", serif;
-     /* This component needs a larger container.  */
     margin: 20% 0 2%;
 }
 
@@ -30,8 +25,7 @@
     font-family: "Prata", serif;
     font-size: 3.2rem;
     color: #306fbf;
-    /* This component needs a larger container.  */
-    margin: 30% 0 8% 0;
+    margin: 40% 0 8% 0;
     line-height: 100%;
 }
 
@@ -39,12 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 4%;
-    /* max-height: 80vh; */
-}
-
-.image-div {
-    /* max-height: 80vh; */
+    padding: 1% 5%;
 }
 
 .text-div p {

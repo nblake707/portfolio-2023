@@ -1,3 +1,7 @@
+.container-layout {
+    height: 100vh;
+} 
+
 .contact-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
