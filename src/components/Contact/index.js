@@ -1,10 +1,9 @@
 import React from "react";
-import Container from "../Container";
-import { contactSection, contact, leftColumn, rightColumn } from "./index.module.css";
+import { containerLayout, contactSection, contact, leftColumn, rightColumn } from "./index.module.css";
 
 const Contact = () => {
   return (
-    <Container id="contact">
+    <section id="contact" className={containerLayout}>
       <div className={contactSection}>
         <div className={leftColumn}>
           <h2 className={contact}>Contact</h2>
@@ -14,7 +13,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 

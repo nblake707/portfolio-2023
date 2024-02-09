@@ -1,23 +1,47 @@
+.container-layout {
+    height: 100vh;
+} 
+
 .project-section {
     height: 100%;
     background-color: #fff;
 }
 
-.project-cards {
-
-}
-
 .margin-div {
-        /* display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr; */
-        /* display: flex;
-        flex-direction: column; */
-        padding: 5% 12%;
+    padding: 5% 12%;
 }
 
 .margin-div h2 {
-    font-size: 5rem;
+    font-size: 6rem;
     color: darkseagreen;
     float: right;
+    margin: 8% 0 8% 0;
+}
+
+.project-tiles {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 50vh;
+    width: 100%;
+}
+
+.project-tiles p {
+    position: absolute;
+    z-index: 2;
+}
+
+.project-img {
+    max-height: 100%;
+    transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    /* transition: background 0.5s ease;  */
+}
+
+.project-img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    /* background: rgba(0, 0, 255, 0.3); */
 }

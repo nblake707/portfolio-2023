@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Container from "../Container";
+// import Container from "../Container";
 import Nav from "../Nav";
 import {
   introContainer,
@@ -11,6 +11,7 @@ import {
   imgDiv,
   mePic,
   toggleIcon,
+  containerLayout
 } from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -22,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <Container id="home">
+    <section id="home" className={containerLayout}>
       <div className={introContainer}>
         <div className={divOne}>
           <div className={textDiv}>
@@ -68,7 +69,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 
