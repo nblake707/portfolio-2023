@@ -1,7 +1,7 @@
 .container-layout {
-    height: 105vh;
+    height: 101vh;
     position: relative;
-} 
+}
 
 .contact-section {
     display: grid;
@@ -17,28 +17,52 @@
     position: absolute;
     /* left: 1em;
     top: 1em; */
-    margin: 1% 4%;
+    margin: 3% 4%;
     font-family: "Prata", serif;
 }
 
 
 .left-column {
-   background-image: url(./plant.jpg); 
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-image: url(./plant.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .right-column {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15%;
+    background-color: #F9F7F0;
+}
 
- display: flex;
- align-items: center;
- justify-content: center;
-  background-color: #F9F7F0;  
+.right-column h1 {
+    align-self: flex-start;
+    margin-left: 5%;
+    color: #2e4f4f;
+    font-size: 1.7rem;
+    font-family: "Prata", serif;
 }
 
 .form-div {
     display: flex;
+    justify-content: center;
     height: 70vh;
     width: 90%;
 }
+
+.form-div form {
+    /* display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; */
+    padding: 10%;
+}
+
+.input-group {
+    height: 30px;
+}
+
+.text-box {}

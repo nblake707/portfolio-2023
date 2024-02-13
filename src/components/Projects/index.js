@@ -20,10 +20,10 @@ const Projects = () => {
           <h2>Works</h2>
         </div>
         {/* use a loop here to present the photos */}
-        <div className={projectTiles}>
+       <div className={projectTiles}>
           {/* display text only on hover */}
-          <p>Recipe App</p>
-          <StaticImage
+          {/* <p>Recipe App</p> */}
+           <StaticImage
             src="../../images/markus-winkler-afW1hht0NSs-unsplash.jpg"
             alt="Code on computer screen"
             objectFit="cover"
@@ -59,8 +59,8 @@ const Projects = () => {
             alt="Code on computer screen"
             objectFit="cover"
             className={projectImg}
-          />
-        </div>
+          /> 
+        </div> 
       </div>
     </section>
   );

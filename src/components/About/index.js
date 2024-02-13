@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className={containerLayout}>
       <div className={aboutSection}>
         <div className={paddingDiv}>
-          <div>
+          <div style={{'padding-left': '5%'}}>
             <h2>About Me</h2>
             <StaticImage
               src="../../images/correctClass.jpg"

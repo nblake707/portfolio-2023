@@ -1,21 +1,23 @@
 .container-layout {
-    height: 95vh;
+    height: 87vh;
 } 
 
 .project-section {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     background-color: #fff;
 }
 
 .margin-div {
-    padding: 5% 12%;
+    /* padding: 5% 12%; */
 }
 
-.margin-div h2 {
+.project-section h2 {
     font-size: 6rem;
     color: #8fbc8f;
     float: right;
-    margin: 10% 0 3% 0;
+    margin: 10% 10% 5% 0;
 }
 
 .project-tiles {
@@ -23,6 +25,8 @@
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    justify-self: flex-end;
+    /* float: bottom; */
     height: 50vh;
     width: 100%;
 }
