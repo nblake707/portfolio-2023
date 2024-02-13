@@ -15,8 +15,6 @@
     font-size: 5rem;
     color: #FCF6DE;
     position: absolute;
-    /* left: 1em;
-    top: 1em; */
     margin: 3% 4%;
     font-family: "Prata", serif;
 }
@@ -41,28 +39,17 @@
 
 .right-column h1 {
     align-self: flex-start;
-    margin-left: 5%;
+    margin: 0 0 5% 5%;
     color: #2e4f4f;
     font-size: 1.7rem;
     font-family: "Prata", serif;
 }
 
 .form-div {
-    display: flex;
-    justify-content: center;
     height: 70vh;
     width: 90%;
 }
 
-.form-div form {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr; */
-    padding: 10%;
+.form-div button {
+   background-color: #2e4f4f;
 }
-
-.input-group {
-    height: 30px;
-}
-
-.text-box {}

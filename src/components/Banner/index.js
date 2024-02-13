@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from 'flowbite-react';
 import { containerLayout, resumeDiv } from "./index.module.css";
 
 const Banner = () => {
@@ -6,11 +7,10 @@ const Banner = () => {
     <section id="works" className={containerLayout}>
     <div className={resumeDiv}>
         <h1>Resume</h1>
-        <button>Download</button>
+        <Button>Download</Button>
     </div>
     </section>
-  )
-  
+  ) 
 };
 
 export default Banner;

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Button, Label, TextInput, Textarea } from "flowbite-react";
 import {
   containerLayout,
   contactSection,
@@ -6,16 +8,13 @@ import {
   leftColumn,
   rightColumn,
   formDiv,
-  inputGroup,
-  textBox,
 } from "./index.module.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState();
-
-  const handleChange = (e) => {
-    setFormData(e.target.value);
-  };
+  const [state, handleSubmit] = useForm("mrgjgabb");
+  // if (state.succeeded) {
+  //   return <p>Thanks for reaching out!</p>;
+  // }
 
   return (
     <section id="contact" className={containerLayout}>
@@ -25,54 +24,60 @@ const Contact = () => {
         <div className={rightColumn}>
           <h1>Get in touch</h1>
           <div className={formDiv}>
-            <form>
-              <div className={inputGroup}>
-                <label for="first name">first name:</label>
-                <input
-                  type="text"
-                  placeholder="Enter your first name"
-                  size={30}
-                  value={formData}
-                  onChange={handleChange}
+            <form
+              method="POST"
+              action="https://formspree.io/f/mrgjgabb"
+              className="flex max-w-md flex-col gap-4"
+              onSubmit={handleSubmit}
+            >
+              <div>
+                <div className="mb-2 block">
+                  <Label htmlFor="name" value="Name" />
+                </div>
+                <TextInput id="name" type="text" name="name" required shadow />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
                 />
               </div>
-              <div className={inputGroup}>
-                <label for="last name">last name:</label>
-                <input
-                  type="text"
-                  placeholder="Enter your last name"
-                  size={30}
-                  value={formData}
-                  onChange={handleChange}
+              <div>
+                <div className="mb-2 block">
+                  <Label htmlFor="email" value="Email" />
+                </div>
+                <TextInput
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="name@website.com"
+                  required
+                  shadow
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
-              <div className={inputGroup}>
-                <label for="email">email:</label>
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  size={30}
-                  value={formData}
-                  onChange={handleChange}
+              <div className="max-w-md">
+                <div className="mb-2 block">
+                  <Label htmlFor="comment" value="Your message" />
+                </div>
+                <Textarea
+                  id="message"
+                  name="message"
+                  placeholder="Leave a message..."
+                  required
+                  shadow
+                  rows={4}
+                />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
                 />
               </div>
-              <div className={inputGroup}>
-                <label for="subject">subject:</label>
-                <input
-                  type="text"
-                  placeholder="Enter the subject"
-                  size={30}
-                  value={formData}
-                  onChange={handleChange}
-                />
-              </div>
-              <textarea 
-              className={textBox}
-              placeholder="Enter a message"
-              rows="10" 
-              cols="50"
-              >  
-              </textarea>
+              <Button type="submit" disabled={state.submitting}>Submit</Button>
             </form>
           </div>
         </div>
