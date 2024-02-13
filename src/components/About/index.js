@@ -1,14 +1,13 @@
 import React from "react";
-import Container from "../Container";
 import { StaticImage } from "gatsby-plugin-image";
-import { aboutSection, marginDiv, imageDiv, textDiv } from "./index.module.css";
+import { containerLayout, aboutSection, paddingDiv, textDiv } from "./index.module.css";
 
 const About = () => {
   return (
-    <Container id="about">
+    <section id="about" className={containerLayout}>
       <div className={aboutSection}>
-        <div className={marginDiv}>
-          <div className={imageDiv}>
+        <div className={paddingDiv}>
+          <div style={{'padding-left': '5%'}}>
             <h2>About Me</h2>
             <StaticImage
               src="../../images/correctClass.jpg"
@@ -18,7 +17,6 @@ const About = () => {
               height={270}
               style={{ margin: "3% 0 10% 0" }}
             />
-            {/* need to fix image display */}
             <StaticImage
               src="../../images/code_tint.jpg"
               alt="Code on computer screen"
@@ -41,17 +39,17 @@ const About = () => {
               eventually became a new career path. After receiving a scholarship
               through the CUNY Tech Hire program I was able to attend The
               Software Guild, a fast-paced apprenticeship program specializing
-              in data-driven Java development. This hybrid grant program made it
+              {/* in data-driven Java development. This hybrid grant program made it
               possible for me to fully immerse myself in the world of
               programming. Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae
               consequuntur voluptatum laborum numquam blanditiis harum quisquam
-              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum!
+              eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! */}
             </p>
           </div>
         </div>
       </div>
-    </Container>
+    </section>
   );
 };
 
