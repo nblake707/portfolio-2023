@@ -1,24 +1,28 @@
 .container-layout {
-    height: 87vh;
+    min-height: 75vh;
 } 
 
 .project-section {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     background-color: #fff;
 }
 
-.margin-div {
-    /* padding: 5% 12%; */
+.project-heading  {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 6rem;
+    font-family: 'Prata';
+    color: #8fbc8f;
+    margin: 10% 10% 2% 0;
 }
 
-.project-section h2 {
-    font-size: 6rem;
-    color: #8fbc8f;
-    float: right;
-    margin: 10% 10% 5% 0;
+.card-div {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 
 .project-tiles {
     display: grid;

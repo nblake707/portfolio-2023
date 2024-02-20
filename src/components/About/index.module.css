@@ -1,11 +1,11 @@
 .container-layout {
-    height: 100vh;
+    min-height: 110vh;
     /* padding: 10%; */
 } 
 
 .about-section {
     background-color: #fff;
-    height: 100vh;
+    height: 100%;
 }
 
 .padding-div {
