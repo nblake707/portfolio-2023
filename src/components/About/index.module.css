@@ -9,15 +9,16 @@
 }
 
 .padding-div {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: auto auto; */
     height: 100%;
     padding: 0 12%;
 }
 
 .about-section h2 {
     color: #003170;
-    font-size: 5rem; 
+    font-size: 5.2rem; 
     font-family: "Prata", serif;
     margin: 20% 0 2%;
 }
@@ -26,19 +27,25 @@
     font-family: "Prata", serif;
     font-size: 3.2rem;
     color: #306fbf;
-    margin: 55% 0 8% 0;
+    margin: 42% 0 8% 0;
     line-height: 100%;
 }
+
+.heading-div {
+  flex: 1 1 45%;
+  padding-left: 1%;
+} 
 
 .text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1% 5%;
+    padding: 1% 2%;
+    flex: 1 1 55%
 }
 
 .text-div p {
-    line-height: 2;
-    font-size: 1em;
+    line-height: 1.8;
+    font-size: 1.2em;
     font-family: 'Inconsolata', monospace;
 }

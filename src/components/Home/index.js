@@ -40,16 +40,14 @@ const Home = () => {
                 "I'm an educator.",
                 1000,
               ]}
-              speed={40}
+              speed={35}
               style={{ fontSize: '1.2rem', fontFamily: 'Inconsolata' }}
               repeat={Infinity}
             />
           </div>
         </div>
         <div className={divTwo}>
-          <div 
-          // className={toggleIcon} 
-          onClick={menuToggle}>
+          <div onClick={menuToggle}>
             {isActive ? (
               <>
                 <StaticImage

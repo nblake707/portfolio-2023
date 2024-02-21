@@ -3,9 +3,8 @@
 } 
 
 .intro-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -15,6 +14,7 @@
     justify-content: center;
     background-color: #2f4f4f;
     color: #dae7e6;
+    flex: 1 1 50%;
 }
 
 .div-two {
@@ -23,6 +23,8 @@
     justify-content: center;
     background-color: #dae7e6;
     color: #f2e9e4;
+    width: auto;
+    flex: 1 1 50%;
 }
 
 .text-div {
