@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useIsVisible } from "../../util/useIsVisible";
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Label, TextInput, Textarea } from "flowbite-react";
 import {
@@ -10,6 +11,8 @@ import {
 } from "./index.module.css";
 
 const Contact = () => {
+  const ref3 = useRef();
+  const isVisible3 = useIsVisible(ref3);
   const [state, handleSubmit] = useForm("mrgjgabb");
   // if (state.succeeded) {
   //   return <p>Thanks for reaching out!</p>;
@@ -17,7 +20,12 @@ const Contact = () => {
 
   return (
     <section id="contact" className={containerLayout}>
-      <div className={`${contactSection} h-full flex flex-row flex-wrap`}>
+      <div
+        ref={ref3}
+        className={`${contactSection} h-full flex flex-row flex-wrap transition-opacity ease-in duration-1000 ${
+          isVisible3 ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className={contactHeadings}>
           <h2>Contact</h2>
           <h3>Get in touch!</h3>
