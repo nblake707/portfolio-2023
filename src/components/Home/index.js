@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import Nav from "../Nav";
 import {
   introContainer,
@@ -10,7 +10,7 @@ import {
   imgDiv,
   mePic,
   toggleIcon,
-  containerLayout
+  containerLayout,
 } from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -41,7 +41,7 @@ const Home = () => {
                 1000,
               ]}
               speed={35}
-              style={{ fontSize: '1.2rem', fontFamily: 'Inconsolata' }}
+              style={{ fontSize: "1.2rem", fontFamily: "Inconsolata" }}
               repeat={Infinity}
             />
           </div>
@@ -57,7 +57,7 @@ const Home = () => {
                   width={50}
                   height={50}
                 />
-                <Nav active={isActive}/>
+                <Nav active={isActive} />
               </>
             ) : (
               <StaticImage
