@@ -1,10 +1,10 @@
 .container-layout {
     min-height: 110vh;
+    background-color: #FCFBF9;
     /* padding: 10%; */
 } 
 
 .about-section {
-    background-color: #fff;
     height: 100%;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .heading-div {
-  flex: 1 1 45%;
+  flex: 1 1 47%;
   padding-left: 1%;
 } 
 
@@ -41,7 +41,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 1% 2%;
-    flex: 1 1 55%
+    flex: 1 1 53%
 }
 
 .text-div p {

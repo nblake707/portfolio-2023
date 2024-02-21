@@ -4,7 +4,7 @@
 
 .project-section {
     height: 100%;
-    background-color: #fff;
+    background-color: #FCFBF9;
 }
 
 .project-heading  {
@@ -13,7 +13,7 @@
     font-size: 6rem;
     font-family: 'Prata';
     color: #8fbc8f;
-    margin: 5% 10% 2% 0;
+    margin: 5% 12% 2% 0;
 }
 
 .card-div {

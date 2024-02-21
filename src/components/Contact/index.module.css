@@ -1,9 +1,10 @@
 .container-layout {
     height: 100vh;
+    background-color: #FCFBF9;
 }
 
 .contact-headings {
-    padding: 8% 8% 0 8%;
+    padding: 8% 8% 0 10%;
 }
 
 .contact-headings h2 {

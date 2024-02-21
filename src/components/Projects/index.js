@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useIsVisible } from "../../util/useIsVisible";
 import { Card } from "flowbite-react";
 import {
   containerLayout,
   projectSection,
   projectHeading,
-  cardDiv
+  cardDiv,
 } from "./index.module.css";
 
 const Projects = () => {
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+
   return (
     <section id="works" className={containerLayout}>
-      <div className={projectSection}>
+      <div
+        ref={ref2}
+        className={`${projectSection} transition-opacity ease-in duration-1000 ${
+          isVisible2 ? "opacity-100" : "opacity-0"
+        }`}
+      >
         <div className={projectHeading}>
           <h2>Works</h2>
         </div>
