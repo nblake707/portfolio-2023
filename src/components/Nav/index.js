@@ -3,11 +3,14 @@ import { Link } from "gatsby";
 import { menuOverlay, active } from "./index.module.css";
 
 const Nav = ({ active }) => {
-
   return (
-    // Need to update. Fade in animation tied to active class. 
+    // Need to update. Fade in animation tied to active class.
     <>
-      <div className={active ? `${menuOverlay} ${menuOverlay.active}` : `${menuOverlay}`}>
+      <div
+        className={
+          active ? `${menuOverlay} ${menuOverlay.active}` : `${menuOverlay}`
+        }
+      >
         <ul>
           <li>
             <Link to="/#home">Home</Link>

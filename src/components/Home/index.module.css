@@ -1,11 +1,10 @@
 .container-layout {
-    height: 95vh;
+    height: 93vh;
 } 
 
 .intro-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     height: 100%;
 }
 
@@ -15,8 +14,8 @@
     justify-content: center;
     background-color: #2f4f4f;
     color: #dae7e6;
+    flex: 1 1 50%;
 }
-
 
 .div-two {
     display: flex;
@@ -24,6 +23,8 @@
     justify-content: center;
     background-color: #dae7e6;
     color: #f2e9e4;
+    width: auto;
+    flex: 1 1 50%;
 }
 
 .text-div {
@@ -36,13 +37,10 @@
 }
 
 .main-heading {
-    font-size: 9.5rem;
+    font-size: 9.4rem;
     font-family: "Prata", serif;
     position: relative;
-}
-
-.sub-heading {
-    font-size: 1.2rem;
+    line-height: 106%;
 }
 
 .imgDiv {

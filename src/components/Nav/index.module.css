@@ -13,6 +13,7 @@
     transform: scale(0);
     transition: 0.5s;
     transform: scale(1);
+    font-family: "Prata", serif;
 }
 
 /* .menu-overlay.active {
@@ -35,7 +36,7 @@
     text-decoration: none;
     font-size: 3.5em;
     padding: 0 10px;
-    color: #ffffff;
+    color: #F6F4EE;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;

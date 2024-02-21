@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`PT Sans\:400,700`, `Prata`],
+        fonts: [`PT Sans\:400,700`, `Prata`, `Inconsolata`],
         display: "swap",
       },
     },
