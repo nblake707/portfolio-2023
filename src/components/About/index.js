@@ -3,6 +3,7 @@ import { useIsVisible } from "../../util/useIsVisible";
 import { StaticImage } from "gatsby-plugin-image";
 import {
   containerLayout,
+  bounce,
   aboutSection,
   paddingDiv,
   headingDiv,
@@ -15,7 +16,7 @@ const About = () => {
 
   return (
     <section id="about" className={containerLayout}>
-      <div style={{ margin: ".8% auto", width: "2.9%" }}>
+      <div className={bounce}>
         <svg
           className="h-10 w-10 text-teal-700"
           viewBox="0 0 24 24"
