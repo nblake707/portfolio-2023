@@ -19,7 +19,7 @@
   margin-top: 1%;
 }
 
-  .social-icon {
+.social-icon {
     height: 60px;
     filter: invert(27%) sepia(46%) saturate(343%) hue-rotate(131deg) brightness(84%) contrast(88%);
     margin: 10px 20px;

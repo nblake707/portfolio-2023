@@ -1,55 +1,46 @@
 .container-layout {
-    height: 101vh;
-    position: relative;
+    height: 100vh;
 }
 
-.contact-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #fff;
-    height: 100%;
+.contact-headings {
+    padding: 8% 8% 0 8%;
 }
 
-.contact {
-    font-size: 5rem;
-    color: #FCF6DE;
-    position: absolute;
-    margin: 3% 4%;
+.contact-headings h2 {
+    font-size: 6rem;
+    color: #8fbc8f;
     font-family: "Prata", serif;
 }
 
-
-.left-column {
-    background-image: url(./plant.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.right-column {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 15%;
-    background-color: #F9F7F0;
-}
-
-.right-column h1 {
-    align-self: flex-start;
-    margin: 0 0 5% 5%;
+.contact-headings h3 {
+    font-size: 1.2rem;
+    margin-left: 8%;
     color: #2e4f4f;
-    font-size: 1.7rem;
-    font-family: "Prata", serif;
 }
 
 .form-div {
-    height: 70vh;
-    width: 90%;
+    height: 65%;
+    width: 44%;
+    border-radius: 15px;
+    margin: auto;
+    padding-top: 4%;
+    background-color: #2e4f4f;
 }
 
-.form-div button {
-   background-color: #2e4f4f;
+label-color {
+    color: #d9e7e6;
 }
+
+.contact-section form {
+    width: 70%;
+    margin: auto;
+}
+
+.contact-section button {
+    background-color: #d9e7e6;
+    color: #2e4f4f;
+}
+
+/* Smaller screen styles */
+
+/* form div width of 80% */
