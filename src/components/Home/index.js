@@ -1,17 +1,16 @@
 import React, { useState } from "react";
-// import Container from "../Container";
+import { TypeAnimation } from "react-type-animation";
 import Nav from "../Nav";
 import {
   introContainer,
   divOne,
   mainHeading,
-  subHeading,
   divTwo,
   textDiv,
   imgDiv,
   mePic,
   toggleIcon,
-  containerLayout
+  containerLayout,
 } from "./index.module.css";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -29,13 +28,26 @@ const Home = () => {
           <div className={textDiv}>
             <h1 className={mainHeading}>hello</h1>
             {/* maybe typing text here */}
-            <p className={subHeading}>I'm Nateyana, this is my personal page</p>
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed once, initially
+                "I'm Nateyana, welcome to my portfolio!",
+                1000,
+                "I'm a full-stack software engineer.",
+                1000,
+                "I'm a curriculum developer.",
+                1000,
+                "I'm an educator.",
+                1000,
+              ]}
+              speed={35}
+              style={{ fontSize: "1.2rem", fontFamily: "Inconsolata" }}
+              repeat={Infinity}
+            />
           </div>
         </div>
         <div className={divTwo}>
-          <div 
-          // className={toggleIcon} 
-          onClick={menuToggle}>
+          <div onClick={menuToggle}>
             {isActive ? (
               <>
                 <StaticImage
@@ -45,7 +57,7 @@ const Home = () => {
                   width={50}
                   height={50}
                 />
-                <Nav active={isActive}/>
+                <Nav active={isActive} />
               </>
             ) : (
               <StaticImage

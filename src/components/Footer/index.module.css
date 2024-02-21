@@ -3,13 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #d9e7e6; */
+    background-color: #d9e7e6;
     height: 200px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    /* z-index: 1; */
     font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     color: #2e4f4f;
@@ -24,7 +19,7 @@
   margin-top: 1%;
 }
 
-  .social-icon {
+.social-icon {
     height: 60px;
     filter: invert(27%) sepia(46%) saturate(343%) hue-rotate(131deg) brightness(84%) contrast(88%);
     margin: 10px 20px;
