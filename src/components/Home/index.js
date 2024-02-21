@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-// import Container from "../Container";
+import { TypeAnimation } from 'react-type-animation';
 import Nav from "../Nav";
 import {
   introContainer,
   divOne,
   mainHeading,
-  subHeading,
   divTwo,
   textDiv,
   imgDiv,
@@ -29,7 +28,22 @@ const Home = () => {
           <div className={textDiv}>
             <h1 className={mainHeading}>hello</h1>
             {/* maybe typing text here */}
-            <p className={subHeading}>I'm Nateyana, welcome to my portfolio.</p>
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed once, initially
+                "I'm Nateyana, welcome to my portfolio!",
+                1000,
+                "I'm a full-stack software engineer.",
+                1000,
+                "I'm a curriculum developer.",
+                1000,
+                "I'm an educator.",
+                1000,
+              ]}
+              speed={40}
+              style={{ fontSize: '1.2rem', fontFamily: 'Inconsolata' }}
+              repeat={Infinity}
+            />
           </div>
         </div>
         <div className={divTwo}>
