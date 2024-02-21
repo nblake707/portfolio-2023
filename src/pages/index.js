@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Home from "../components/Home";
 import About from "../components/About";
 import Projects from "../components/Projects";
-import Banner from "../components/Banner";
 import Contacts from "../components/Contact";
 
 const IndexPage = () => {
@@ -12,7 +11,6 @@ const IndexPage = () => {
         <Home />
         <About />
         <Projects />
-        <Banner />
         <Contacts />
       </Layout>
   );
