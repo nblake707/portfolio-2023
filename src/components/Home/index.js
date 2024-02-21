@@ -29,7 +29,7 @@ const Home = () => {
           <div className={textDiv}>
             <h1 className={mainHeading}>hello</h1>
             {/* maybe typing text here */}
-            <p className={subHeading}>I'm Nateyana, this is my personal page</p>
+            <p className={subHeading}>I'm Nateyana, welcome to my portfolio.</p>
           </div>
         </div>
         <div className={divTwo}>

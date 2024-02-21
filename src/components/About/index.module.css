@@ -26,7 +26,7 @@
     font-family: "Prata", serif;
     font-size: 3.2rem;
     color: #306fbf;
-    margin: 40% 0 8% 0;
+    margin: 55% 0 8% 0;
     line-height: 100%;
 }
 
@@ -38,6 +38,7 @@
 }
 
 .text-div p {
-    line-height: 160%;
-    font-size: 1.2em;
+    line-height: 2;
+    font-size: 1em;
+    font-family: 'Inconsolata', monospace;
 }
