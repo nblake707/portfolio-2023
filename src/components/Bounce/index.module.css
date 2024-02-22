@@ -9,16 +9,15 @@
 
 @keyframes bounce {
 
-
     0% {
-        margin-top: 0;
+        transform: translateY(0);
     }
 
     50% {
-        margin-top: 20px;
+        transform: translateY(-20px);
     }
 
     100% {
-        margin-top: 0;
+        transform: translateY(0);
     }
 }
