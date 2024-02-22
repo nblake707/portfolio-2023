@@ -27,10 +27,8 @@ const Home = () => {
         <div className={divOne}>
           <div className={textDiv}>
             <h1 className={mainHeading}>hello</h1>
-            {/* maybe typing text here */}
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed once, initially
                 "I'm Nateyana, welcome to my portfolio!",
                 1000,
                 "I'm a full-stack software engineer.",
