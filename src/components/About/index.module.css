@@ -1,8 +1,7 @@
 .container-layout {
     min-height: 110vh;
     background-color: #FCFBF9;
-    /* padding: 10%; */
-} 
+}
 
 .about-section {
     height: 100%;
@@ -11,14 +10,13 @@
 .padding-div {
     display: flex;
     flex-wrap: wrap;
-    /* grid-template-columns: auto auto; */
     height: 100%;
     padding: 0 12%;
 }
 
 .about-section h2 {
     color: #003170;
-    font-size: 5.2rem; 
+    font-size: 5.2rem;
     font-family: "Prata", serif;
     margin: 20% 0 2%;
 }
@@ -32,9 +30,9 @@
 }
 
 .heading-div {
-  flex: 1 1 47%;
-  padding-left: 1%;
-} 
+    flex: 1 1 47%;
+    padding-left: 1%;
+}
 
 .text-div {
     display: flex;
