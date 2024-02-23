@@ -1,5 +1,5 @@
 .container-layout {
-    min-height: 75vh;
+    min-height: 100vh;
 } 
 
 .project-section {
@@ -13,7 +13,7 @@
     font-size: 6rem;
     font-family: 'Prata';
     color: #8fbc8f;
-    margin: 5% 12% 2% 0;
+    margin: 5% 7% 4% 0;
 }
 
 .card-div {
@@ -23,33 +23,3 @@
     flex-wrap: wrap;
 }
 
-
-.project-tiles {
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-self: flex-end;
-    /* float: bottom; */
-    height: 50vh;
-    width: 100%;
-}
-
-.project-tiles p {
-    position: absolute;
-    z-index: 2;
-}
-
-.project-img {
-    max-height: 100%;
-    transition: opacity 0.5s ease;
-    -moz-transition: opacity 0.5s ease;
-    -webkit-transition: opacity 0.5s ease;
-    /* transition: background 0.5s ease;  */
-}
-
-.project-img:hover {
-    opacity: 0.5;
-    cursor: pointer;
-    /* background: rgba(0, 0, 255, 0.3); */
-}

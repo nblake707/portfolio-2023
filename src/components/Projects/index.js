@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 import { useIsVisible } from "../../util/useIsVisible";
-import { Card } from "flowbite-react";
+import { Card, Button } from "flowbite-react";
+import socialMedia from "../../images/social-media.jpg";
+import vendingMachine from "../../images/vending-machine.jpg";
+import eCom from "../../images/eCom.jpg";
 import {
   containerLayout,
   projectSection,
@@ -26,42 +29,98 @@ const Projects = () => {
         <div className={cardDiv}>
           <Card
             className="max-w-sm"
-            imgAlt="Meaningful alt text for an image that is not purely decorative"
-            imgSrc=""
+            imgAlt="View of iPhone displaying social media apps"
+            imgSrc={socialMedia}
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Deep Thoughts
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p className="font-normal text-gray-700 dark:text-gray-400 mb-5">
+              Lofi social media app made with React, Express, Apollo, and
+              Mongodb Atlas. Deployed using Render.
             </p>
+            <div className="flex justify-center">
+              <a
+                href="https://github.com/nblake707/deepThoughts"
+                target="_blank"
+              >
+                <Button
+                  className="mr-4"
+                  outline
+                  gradientDuoTone="tealToLime"
+                  pill
+                >
+                  Code
+                </Button>
+              </a>
+              <a href="https://deepthoughts-ss7d.onrender.com/" target="_blank">
+                <Button className="" outline gradientDuoTone="tealToLime" pill>
+                  Live
+                </Button>
+              </a>
+            </div>
           </Card>
           <Card
             className="max-w-sm"
-            imgAlt="Meaningful alt text for an image that is not purely decorative"
-            imgSrc=""
+            imgAlt="Three vending machines in a row"
+            imgSrc={vendingMachine}
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              Vending Machine
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p className="font-normal text-gray-700 dark:text-gray-400 mb-5">
+              Vending machine application made with Java, Spring Boot, and React.
             </p>
+            <div className="flex justify-center">
+              <a
+                href="https://github.com/nblake707/VendingMachineWebApp"
+                target="_blank"
+              >
+                <Button
+                  className="mr-4"
+                  outline
+                  gradientDuoTone="tealToLime"
+                  pill
+                >
+                  Code
+                </Button>
+              </a>
+              <a href="#" target="_blank">
+                <Button className="" outline gradientDuoTone="tealToLime" pill>
+                  Live
+                </Button>
+              </a>
+            </div>
           </Card>
           <Card
             className="max-w-sm"
-            imgAlt="Meaningful alt text for an image that is not purely decorative"
-            imgSrc=""
+            imgAlt="Colorful coats handing on a storefront rack"
+            imgSrc={eCom}
           >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Noteworthy technology acquisitions 2021
+              E-Commerce Store
             </h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">
-              Here are the biggest enterprise technology acquisitions of 2021 so
-              far, in reverse chronological order.
+            <p className="font-normal text-gray-700 dark:text-gray-400 mb-5">
+              Made with React, Apollo, and the React Context API for state
+              management. Deployed with Render. 
             </p>
+            <div className="flex justify-center">
+              <a href="https://github.com/nblake707/shop-shop" target="_blank">
+                <Button
+                  className="mr-4"
+                  outline
+                  gradientDuoTone="tealToLime"
+                  pill
+                >
+                  Code
+                </Button>
+              </a>
+              <a href="#" target="_blank">
+                <Button className="" outline gradientDuoTone="tealToLime" pill>
+                  Live
+                </Button>
+              </a>
+            </div>
           </Card>
         </div>
       </div>
