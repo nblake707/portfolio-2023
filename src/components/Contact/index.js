@@ -41,7 +41,7 @@ const Contact = () => {
               <div className="mb-2 block">
                 <Label htmlFor="name" value="Name" />
               </div>
-              <TextInput id="name" type="text" name="name" required shadow />
+              <TextInput id="name" type="text" name="name" autoComplete="name" required shadow />
               <ValidationError
                 prefix="Name"
                 field="name"
@@ -57,6 +57,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 placeholder="name@website.com"
+                autoComplete="email"
                 required
                 shadow
               />
