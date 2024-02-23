@@ -48,15 +48,14 @@ const About = () => {
               <br />
               story
             </h3>
-            <p>
+            <p className="text-balance">
               Hello, my name is Nateyana! I'm a software engineer and educator
               from NYC. I discovered programming by chance and what started as a
               surprise interest eventually blossomed into a new career path.
               After receiving a grant I was able to attend a Java apprenticeship
               program that landed me a teaching position at Columbia University.
               Since then I've worked with various companies such as Netflix,
-              Amazon, and edX. Feel free to view my resume by clicking the
-              button below:
+              Amazon, and edX. Feel free to view my <a href="#" className="underline decoration-4 decoration-sky-500">resume</a>.
             </p>
           </div>
         </div>
