@@ -68,7 +68,7 @@ const Contact = () => {
             </div>
             <div className="max-w-md">
               <div className="mb-2 block">
-                <Label htmlFor="comment" value="Your message" />
+                <Label htmlFor="message" value="Your message" />
               </div>
               <Textarea
                 id="message"
