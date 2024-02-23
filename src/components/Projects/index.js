@@ -36,7 +36,7 @@ const Projects = () => {
               Deep Thoughts
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400 mb-5">
-              LoFi social media app made with React, Express, Apollo, and
+              Lofi social media app made with React, Express, Apollo, and
               Mongodb Atlas. Deployed using Render.
             </p>
             <div className="flex justify-center">
@@ -53,7 +53,7 @@ const Projects = () => {
                   Code
                 </Button>
               </a>
-              <a href="#" target="_blank">
+              <a href="https://deepthoughts-ss7d.onrender.com/" target="_blank">
                 <Button className="" outline gradientDuoTone="tealToLime" pill>
                   Live
                 </Button>
